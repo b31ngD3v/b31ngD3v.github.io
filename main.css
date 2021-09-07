@@ -1,0 +1,40 @@
+body {
+  cursor: text;
+  font-family: Lucida Console, CommPlus, MS LineDraw, Telix TT Terminal,
+    monospace;
+  font-size: 16px;
+  height: 100%;
+  cursor: default;
+}
+
+#cursor {
+  background-color: white;
+  animation: blinker 1s linear infinite;
+}
+
+#hidden-input {
+  opacity: 0;
+  width: 0px;
+  color: transparent;
+  outline: none;
+  left: -100px;
+  position: relative;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#root-3 br {
+  display: none;
+}
+
+.output br {
+  display: block !important;
+}
+
+#butt:hover {
+  cursor: pointer;
+}

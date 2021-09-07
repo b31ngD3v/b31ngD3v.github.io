@@ -1,16 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="Pramurta Sinha | b31ngd3v" />
-        <meta
-            name="description"
-            content="b31ngd3v is more than an established organizational developer and innovator; he is a proven leader.  b31ngd3v collaborates with his leadership team daily to provide his clients with expertise and breakthrough approaches."
-        />
-        <title>Pramurta Sinha - b31ngd3v</title>
-    </head>
-    <body>
-        <script>window.location.replace("https://b31ngd3v.eu.org");</script>
-    </body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pramurta Sinha - b31ngd3v</title>
+    <meta name="author" content="Pramurta Sinha | b31ngd3v" />
+    <meta
+      name="description"
+      content="b31ngd3v is more than an established organizational developer and innovator; he is a proven leader.  b31ngd3v collaborates with his leadership team daily to provide his clients with expertise and breakthrough approaches."
+    />
+    <!--<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous|Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        overflow: hidden;
+      }
+      img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+      }
+      button:hover,
+      button:focus {
+        outline: none;
+      }
+      canvas {
+        display: block;
+        vertical-align: bottom;
+      }
+
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .image {
+        border-radius: 50%;
+      }
+
+      .header1 {
+        font-family: "Righteous", cursive;
+        font-size: 6vw;
+      }
+
+      .header2 {
+        font-family: "Ubuntu Mono", monospace;
+        font-size: 1.4vw;
+      }
+
+      .header3 {
+        font-family: "Ubuntu Mono", monospace;
+        font-size: 2.2vw;
+      }
+
+      .link1 {
+        font-family: "Ubuntu Mono", monospace;
+        font-size: 2.8vw;
+        color: inherit;
+        margin: 0px 5px 0px 5px;
+        transition: 0.5s;
+      }
+
+      .link1:hover {
+        color: #fc7a00;
+      }
+
+      .btn-1 {
+        font-family: "Ubuntu Mono", monospace;
+        font-size: 1.5vw;
+        border: none;
+        background-color: #212529;
+        color: white;
+        transition: 0.5s;
+        padding: 3px 12px 3px 12px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      .btn-1:hover {
+        background-color: #fc7a00;
+      }
+
+      @media screen and (max-width: 785px) {
+        .header1 {
+          font-size: 8vw;
+        }
+        .link1 {
+          font-size: 4vw;
+        }
+      }
+
+      @media screen and (max-width: 765px) {
+        body {
+          text-align: center;
+        }
+        .header1 {
+          font-size: 9vw;
+        }
+        .header2 {
+          font-size: 2.5vw;
+        }
+        .link1 {
+          font-size: 5vw;
+        }
+      }
+
+      @media screen and (min-width: 1390px) {
+        .header2 {
+          font-size: 1.1vw;
+        }
+      }
+    </style>
+    <script>
+      document.domain = document.domain;
+    </script>
+    <title>Web Terminal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <div id="root-3" style="display: none">
+      <div
+        style="
+          margin: auto;
+          width: 80vw;
+          height: 80vh;
+          border-radius: 6px;
+          background-color: #22212cf1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+        "
+      >
+        <div
+          style="
+            background-color: #22212c;
+            height: 4vh;
+            border-radius: 6px;
+            display: flex;
+          "
+        >
+          <div
+            id="butt"
+            style="
+              height: 2vh;
+              width: 2vh;
+              background-color: #ff5f56;
+              border-radius: 50px;
+              position: relative;
+              top: 0.9vh;
+              left: 1.2vh;
+            "
+            onclick="exit()"
+          ></div>
+          <div
+            id="butt"
+            style="
+              height: 2vh;
+              width: 2vh;
+              background-color: #ffbd2e;
+              border-radius: 50px;
+              position: relative;
+              top: 0.9vh;
+              left: 1.2vh;
+              margin-left: 0.6vw;
+            "
+            onclick="exit()"
+          ></div>
+          <div
+            id="butt"
+            style="
+              height: 2vh;
+              width: 2vh;
+              background-color: #27c93f;
+              border-radius: 50px;
+              position: relative;
+              top: 0.9vh;
+              left: 1.2vh;
+              margin-left: 0.6vw;
+            "
+          ></div>
+          <div
+            style="
+              color: rgb(185, 184, 184);
+              position: relative;
+              left: 34.8vw;
+              font-family: sans-serif;
+              top: 0.8vh;
+              font-size: 2.3vh;
+              line-height: initial;
+            "
+          >
+            Terminal
+          </div>
+        </div>
+        <div
+          id="content"
+          style="
+            width: 78vw;
+            height: 74vh;
+            font-size: 1.9vh;
+            color: white;
+            margin: 0.4vh 0 0 1vh;
+            overflow: hidden;
+          "
+        ></div>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="center">
+        <div class="row d-flex flex-wrap align-items-center">
+          <div class="col-md-5">
+            <img class="image img-fluid" src="avatar.gif" alt="b31ngd3v" />
+          </div>
+          <div class="col-md">
+            <p class="header1">b31ngd3v</p>
+            <p class="header3">Pramurta Sinha</p>
+            <p class="header2">Developer / Pentester / Student</p>
+            <a
+              class="link1"
+              href="https://facebook.com/b31ngd3v"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              class="link1"
+              href="https://instagram.com/b31ngd3v"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="link1"
+              href="https://linkedin.com/in/pramurta-sinha"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Linkedin"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              class="link1"
+              href="https://github.com/b31ngd3v"
+              target="_blank"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Github"
+              ><i class="fab fa-github"></i></a
+            ><br />
+            <button class="btn-1" onclick="terminal()">Click Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $(() => {
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        particlesJS.load("particles-js", "particlesjs.json");
+      });
+      function terminal() {
+        document.getElementById("root-3").style.removeProperty("display");
+      }
+      function exit() {
+        document.getElementById("root-3").style.display = "none";
+      }
+      window.setInterval(function () {
+        var objDiv = document.getElementById("content");
+        objDiv.scrollTop = objDiv.scrollHeight;
+      }, 200);
+    </script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="init.js"></script>
+    <script src="init-mobile.js"></script>
+  </body>
 </html>
