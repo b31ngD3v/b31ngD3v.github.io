@@ -291,7 +291,6 @@
               title="Github"
               ><i class="fab fa-github"></i></a
             ><br />
-            <button class="btn-1" onclick="terminal()">Click Me</button>
           </div>
         </div>
       </div>
@@ -316,20 +315,7 @@
 
         particlesJS.load("particles-js", "particlesjs.json");
       });
-      function terminal() {
-        document.getElementById("root-3").style.removeProperty("display");
-      }
-      function exit() {
-        document.getElementById("root-3").style.display = "none";
-      }
-      window.setInterval(function () {
-        var objDiv = document.getElementById("content");
-        objDiv.scrollTop = objDiv.scrollHeight;
-      }, 200);
     </script>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="init.js"></script>
     <script src="init-mobile.js"></script>
   </body>
 </html>
